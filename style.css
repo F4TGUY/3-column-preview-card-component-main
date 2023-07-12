@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color: white;
+    
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height: 370px;
+    width: 205px;
+    
+}
+.card-container img{
+    width: 45px;
+}
+.card-container h1{
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 20px 0 30px 0;
+}
+.card-container p{
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.card-container button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width:150px;
+    padding: 15px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: white;
+    margin: 90px 0 10px 0;
+}
+.first-card{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.first-card button{
+    color: hsl(31, 77%, 52%);
+}
+.second-card{
+    background-color: hsl(184, 100%, 22%);
+}
+.second-card button{
+    color: hsl(184, 100%, 22%);
+}
+.third-card{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.third-card button{
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: black;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width: 575px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        margin: 30px 0 30px 0;
+    }
+    .first-card{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .third-card{
+        border-radius: 0 0 10px 10px;
+    }
+    .attribution{
+        margin-bottom: 10px;
+    }
+}
